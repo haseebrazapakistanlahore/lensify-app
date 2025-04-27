@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout1_professional"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/category_image_professional"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/cosmetics"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:id="@+id/category_title_professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:text="Title"
+        android:layout_marginTop="2dp"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

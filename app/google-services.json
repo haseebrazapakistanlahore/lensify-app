@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705932086295",
+    "project_id": "riona-2704d",
+    "storage_bucket": "riona-2704d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705932086295:android:13cc582191d69a80fbe052",
+        "android_client_info": {
+          "package_name": "fyp.com.riona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705932086295-qm3vtnc41lia7kf106ivhub5pmb5f3vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVTURM9FQodczrAY99MuMU23XAZ0aCU_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705932086295-qm3vtnc41lia7kf106ivhub5pmb5f3vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

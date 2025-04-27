@@ -1,0 +1,28 @@
+# === Android Studio default ignore ===
+.idea/
+.gradle/
+local.properties
+*.iml
+*.hprof
+
+# === Build outputs ===
+/build/
+/app/build/
+/*/build/
+
+# === APK, AAB, ZIP files ===
+*.apk
+*.aab
+*.zip
+
+# === Misc ===
+captures/
+output.json
+*.log
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === Git LFS ===
+.gitattributes

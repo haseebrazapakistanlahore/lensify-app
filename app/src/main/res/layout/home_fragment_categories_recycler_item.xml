@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+
+        android:src="@drawable/cosmetics"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:id="@+id/category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:text="Title"
+        android:layout_marginTop="2dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>

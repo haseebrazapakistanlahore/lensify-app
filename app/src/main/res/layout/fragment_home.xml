@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fyp.com.riona.HomeFragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/slider_viewpager_fragment_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+
+                    </androidx.viewpager.widget.ViewPager>
+
+
+                    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                        android:id="@+id/worm_dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5dp"
+                        android:foregroundGravity="center"
+                        app:dotsColor="@color/white"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="8dp"
+                        app:dotsSpacing="4dp"
+                        app:dotsStrokeColor="@color/white"
+                        app:dotsStrokeWidth="1dp" />
+
+
+                </RelativeLayout>
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categories_recyclerView_homePage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/home_tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="start"
+                        android:textAlignment="textStart"
+                        app:tabIndicatorColor="@color/colorPrimary"
+                        app:tabTextColor="@color/black">
+
+                    </com.google.android.material.tabs.TabLayout>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/home_TabViewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp">
+
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/see_all_button_for_consumer"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/login_button_back"
+                    android:text="See All"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

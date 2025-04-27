@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@drawable/ic_all_categories"
+            android:title="All Categories" />
+        <item
+            android:id="@+id/nav_all_favrt"
+            android:icon="@drawable/ic_like"
+            android:title="Favourite" />
+        <item
+            android:id="@+id/nav_my_info"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="My Info" />
+        <item
+            android:id="@+id/nav_my_orders"
+            android:icon="@drawable/ic_orders"
+            android:title="My Orders" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+
+    <item
+        android:visible="false" android:title="Communicate">
+        <menu>
+            <item
+
+                android:visible="false"
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
