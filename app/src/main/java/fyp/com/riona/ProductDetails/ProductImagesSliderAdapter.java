@@ -21,6 +21,7 @@ public class ProductImagesSliderAdapter extends PagerAdapter {
     LayoutInflater layoutInflater;
     List<ProductImagesModel> productImagesModelList;
     public ProductImagesSliderAdapter(Context context , List<ProductImagesModel> productImagesModelList) {
+        productImagesModelList.remove(0);
         this.context = context;
         this.productImagesModelList = productImagesModelList;
     }
