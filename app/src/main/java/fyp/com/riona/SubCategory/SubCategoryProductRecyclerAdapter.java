@@ -103,10 +103,10 @@ class SubCategoryProductRecyclerAdapter extends RecyclerView.Adapter<SubCategory
         }
         if(dataModelArrayList.get(i).getThumbnail()!=null && !dataModelArrayList.get(i).getThumbnail().isEmpty())
         {
+            String imageUrl = dataModelArrayList.get(i).getThumbnail();
             Glide.with(context)
-                    .load(context.getResources().getString(R.string.url)+dataModelArrayList.get(i).getThumbnail()).placeholder(R.drawable.placeholder)
-
-                    .dontAnimate()
+                    .load(imageUrl)
+                    .placeholder(R.drawable.placeholder)
                     .into(myViewHolder.product_image);
 
         }

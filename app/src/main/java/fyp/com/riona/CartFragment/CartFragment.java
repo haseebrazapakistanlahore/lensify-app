@@ -93,9 +93,9 @@ public class CartFragment extends Fragment {
 
             if (getActivity() != null)
                 Realm.init(getActivity());
-                rows = realm.where(CartProductRealmModel.class).findAll();
+            rows = realm.where(CartProductRealmModel.class).findAll();
 
-                rows.load();
+            rows.load();
 
             madapter = new CartRecyclerAdapter(getContext(), rows, discountsModelList, getActivity());
             recyclerView.setAdapter(madapter);

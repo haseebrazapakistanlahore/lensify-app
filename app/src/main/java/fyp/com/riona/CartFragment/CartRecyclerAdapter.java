@@ -106,7 +106,7 @@ class CartRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder,  int position) {
 
         Realm.init(context);
         rows = realm.where(CartProductRealmModel.class).findAll();
@@ -247,7 +247,7 @@ class CartRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         } else if (holder instanceof ItemViewHolder) {
             final ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
             Glide.with(context)
-                    .load(context.getResources().getString(R.string.url) + cartRealmModelList.get(position ).getThumbnail()).placeholder(R.drawable.placeholder)
+                    .load(cartRealmModelList.get(position ).getThumbnail()).placeholder(R.drawable.placeholder)
 
                     .dontAnimate()
                     .into(itemViewHolder.product_image);

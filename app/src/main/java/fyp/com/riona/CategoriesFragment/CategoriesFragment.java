@@ -25,7 +25,7 @@ import retrofit2.Callback;
 
 public class CategoriesFragment extends Fragment {
 
-    RecyclerView categories_consumer_recyclerView, categories_pro_recyclerView;
+    RecyclerView categories_consumer_recyclerView;
     CategoriesTabListAdapter categoriesTabListAdapter;
     CategoriesTabListProAdapter categoriesTabListAdapterPro;
     ArrayList<CategoryDataModel> dataModelArrayList, proCategories,mylist ;
@@ -42,7 +42,7 @@ public class CategoriesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_categories, container, false);
         categories_consumer_recyclerView = (RecyclerView) view.findViewById(R.id.categories_tablist_recyclerView);
-        categories_pro_recyclerView = (RecyclerView)  view.findViewById(R.id.categories_tablist_pro_recyclerView);
+       // categories_pro_recyclerView = (RecyclerView)  view.findViewById(R.id.categories_tablist_pro_recyclerView);
         progress= new ProgressDialog(getActivity());
         progress.setMessage("Loading..");
         progress.show();
@@ -164,8 +164,8 @@ public class CategoriesFragment extends Fragment {
 
     private void setupProRecycler(){
         categoriesTabListAdapterPro = new CategoriesTabListProAdapter(getContext(),proCategories);
-        categories_pro_recyclerView.setAdapter(categoriesTabListAdapterPro);
-        categories_pro_recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+    //    categories_pro_recyclerView.setAdapter(categoriesTabListAdapterPro);
+     //   categories_pro_recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
 
     }
